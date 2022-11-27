@@ -1,0 +1,21 @@
+1.Django ရဲ့ built-in form ကိုယူသုံးချင်လျှင် 
+a.from django.contrib.auth.forms import UserCreationForm in views.py
+b. form = UserCreationForm() in method
+c.{%csrf_token%}
+    {{form.as_p}} in html form 
+
+2.To open python shell
+Commands
+------------ 
+1.python manage.py shell
+2.from django.contrib.auth.models import User
+3. User.objects.count()
+ u = User.objects.first()
+ u.username
+ in shell
+
+d.from django.contrib.auth.models import User
+
+Query
+------------------------
+1.count = User.objects.count()
