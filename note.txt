@@ -58,3 +58,9 @@ Someone asked for password reset for email khinezar70122107@gmail.com. Follow th
 
 http://127.0.0.1:8000/accounts/reset/MQ/bi42re-4c08edcb784d831f2b216a25b600ef51/
 ဒီလို စာပြန်ရမယ်။
+
+
+for forms
+---------
+pip install django-crispy-forms
+pip install crispy-bootstrap5
