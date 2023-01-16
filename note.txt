@@ -1,0 +1,60 @@
+1.Django ရဲ့ built-in form ကိုယူသုံးချင်လျှင် 
+a.from django.contrib.auth.forms import UserCreationForm in views.py
+b. form = UserCreationForm() in method
+c.{%csrf_token%}
+    {{form.as_p}} in html form 
+
+2.To open python shell
+Commands
+------------ 
+1.python manage.py shell
+2.from django.contrib.auth.models import User
+3. User.objects.count()
+ u = User.objects.first()
+ u.username
+ in shell
+
+d.from django.contrib.auth.models import User
+
+Query
+------------------------
+1.count = User.objects.count()
+
+-------------------------
+email အတွက်
+terminal မှာ
+python manage.py sendtestemail khinezar70122107@gmail.com
+နဲ့ setting ထဲမှာ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+Commands
+------------ 
+1.python manage.py shell
+2.from django.contrib.auth.models import User
+3. u = User.objects.get(username='khine')
+ u.email
+ u.email = 'khinezar70122107@gmail.com'
+ u.save()
+ in shell
+
+ after that we'll get
+ that messages
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/MQ/bi42nd-143391d4a6e8b731080c17a633946b93/
+
+Your username, in case you’ve forgotten: khine
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+in shell
+-------------------------
+password_reset_email file ပြီးတဲ့ချိန်မှာ 
+Someone asked for password reset for email khinezar70122107@gmail.com. Follow the link below:
+
+http://127.0.0.1:8000/accounts/reset/MQ/bi42re-4c08edcb784d831f2b216a25b600ef51/
+ဒီလို စာပြန်ရမယ်။
